@@ -99,6 +99,18 @@ h1 {
     text-shadow:.09375rem .09375rem .09375rem #000;
     font-family:'Alfa Slab One', Garamond, serif;
     text-align:center;
+	
+	span {
+
+}
+
+div > span {
+	
+  padding-top: 0rem; 
+  padding-bottom: 0rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem; 
+
 }
  
  h5 {
