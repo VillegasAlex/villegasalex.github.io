@@ -76,7 +76,7 @@ h1 {
     text-align:center;
 	 
  }
- h3 { /* WIP */
+ h3 { 
 	text-transform: uppercase;
     font-size:2rem;
 	font-weight:normal;
@@ -87,9 +87,9 @@ h1 {
     text-align:center;
 }
  
- h4 {
+ h4 {/* WIP */
 	  text-transform: uppercase;
-    font-size:6rem;
+    font-size:1.5rem;
     margin: 0;
     letter-spacing: .5rem;
     color:darkred;
