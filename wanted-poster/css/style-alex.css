@@ -100,7 +100,7 @@ h1 {
     text-align:center;
 }
  
- h5 {/* WIP */
+ h5 {
 	  text-transform: uppercase;
     font-size:1rem;
 	font-weight: normal;
@@ -119,8 +119,23 @@ h1 {
  
 
 /* Section & Paragraph */
-section {}
-	p {}
+section {
+	margin-top: 0.5rem;
+	
+}
+	p {
+		margin-top: 1rem; 
+		margin-bottom: 1rem;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 0rem;
+		padding-bottom: 0rem;
+		padding-left: 1rem;
+		width: 90%;
+		text-align: left;
+		
+		
+	}
 
 
 /* Image & Figure */
