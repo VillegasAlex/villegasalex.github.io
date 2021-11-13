@@ -89,7 +89,7 @@ h1 {
  
  h4 {
 	 
-	  text-transform: uppercase;
+	text-transform: uppercase;
     font-size:1.5rem;
 	font-weight:normal;
     margin: 0;
@@ -103,7 +103,7 @@ h1 {
 }
  
  h5 {
-	  text-transform: uppercase;
+	text-transform: uppercase;
     font-size:1rem;
 	font-weight: normal;
     margin-top: 0.25rem;
