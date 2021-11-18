@@ -79,8 +79,14 @@ header, footer {
 
 /* Imported Typfaces */
 
-
-
+@font-face {
+  font-family: True;
+  src: url(josefinslab-regular.ttff);
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url(sansation_light.woff);
+}
 
 
 /* Typography Styles */
