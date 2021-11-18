@@ -80,12 +80,12 @@ header, footer {
 /* Imported Typfaces */
 
 @font-face {
-  font-family: True;
-  src: url(josefinslab-regular.ttff);
+  font-family: josefinslab-regular;
+  src: url(josefinslab-regular.ttf);
 }
 @font-face {
-  font-family: myFirstFont;
-  src: url(sansation_light.woff);
+  font-family: montserrat-regular;
+  src: url(montserrat-regular.ttf);
 }
 
 
