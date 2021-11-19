@@ -95,7 +95,7 @@ header, footer {
 
 /* Typography Styles */
 
-html{
+html{ 
 	font-family: Monsterrat, "josefinslab-regular", Arial, sans-serif;
 	
 }
@@ -157,8 +157,20 @@ a:hover {
 
 /* List Styling */
 
-ul{}
-ol{}
+ul{
+	list-style-type: square;
+	margin-top:1rem;
+	margin-bottom:1rem;
+	margin-right:0rem;
+	margin-left:0rem;
+}
+ol{
+	text-transform: lowercase;
+	margin-top:1rem;
+	margin-bottom:1rem;
+	margin-right:0rem;
+	margin-left:0rem;
+}
 .long-list a:hover {}
 
 
