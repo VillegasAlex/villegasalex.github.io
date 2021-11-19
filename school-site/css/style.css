@@ -82,6 +82,8 @@ header, footer {
 @font-face {
   font-family: josefinslab-regular;
   src: url(josefinslab-regular.ttf);
+}
+@font-face {
   font-family: montserrat-regular;
   src: url(montserrat-regular.ttf);
 }
@@ -89,34 +91,49 @@ header, footer {
 
 /* Typography Styles */
 
+html{}
 
+h1 {}
+h2 {}
+h2 + p {}
+p {}
+li{}
+figcaption{}
 
 
 
 
 /* Link Styling */
 
+a{}
 
+a:link,
+a:visited {}
 
-
-
+a:focus,
+a:hover {}
 
 /* List Styling */
 
-
-
+ul{}
+ol{}
+.long-list a:hover {}
 
 
 
 /* Navigation Menu */
+nav {}
+nav a {}
 
+nav a:focus,
+nav a:hover {}
 
-
-
+nav a:active {}
 
 
 /* Footer Styles */
 
+footer {}
 
 
 
