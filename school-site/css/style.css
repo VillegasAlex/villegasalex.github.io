@@ -81,7 +81,9 @@ header, footer {
 
 @font-face {
   font-family: josefinslab-regular;
-  src: url(josefinslab-regular.ttf);
+src: url(school-site/fonts/josefinslab-regular.ttf) format('truetype');
+font-weight:normal;
+font-style:normal;
 }
 @font-face {
   font-family: montserrat-regular;
