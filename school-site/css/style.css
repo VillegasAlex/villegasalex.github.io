@@ -96,24 +96,44 @@ header, footer {
 /* Typography Styles */
 
 html{
-	font-family: Monsterrat,"josefinslab-regular", Arial, sans-serif;
+	font-family: Monsterrat, "josefinslab-regular", Arial, sans-serif;
 	
 }
 
 h1 {
-	font-family: Monsterrat, Arial, sans-serif;
-	letter-spacing:0.125rem
+	font-family: josefinslab-regular, "Monsterrat", Arial, sans-serif;
+	font-size:3.75rem;
+	margin:1.125rem;
+	text-align:center;
+	letter-spacing:0.125rem;
 	
 }
-h2 {}
+h2 {
+	font-family: josefinslab-regular, "Monsterrat", Arial, sans-serif;
+	font-size:1.5rem;
+	letter-spacing:0.125rem;
+}
 
-h2 + p {}
+h2 + p {
+	text-indent:1.5rem;
+}
 
-p {}
+p {
+	font-size:0.75rem;
+	letter-spacing:0.031rem;
+	word-spacing:0.125rem;
+}
 
-li{}
+li{
+	font-size:0.75rem;
+	letter-spacing:0.031rem;
+	word-spacing:0.125rem;
+}
 
-figcaption{}
+figcaption{
+	font-size:0.75rem;
+	margin-bottom:2rem;
+}
 
 
 
