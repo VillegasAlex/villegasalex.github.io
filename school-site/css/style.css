@@ -95,13 +95,23 @@ header, footer {
 
 /* Typography Styles */
 
-html{}
+html{
+	
+}
 
-h1 {}
+h1 {
+	font-family: Monsterrat, Arial, sans-serif;
+	letter-spacing:0.125rem
+	
+}
 h2 {}
+
 h2 + p {}
+
 p {}
+
 li{}
+
 figcaption{}
 
 
