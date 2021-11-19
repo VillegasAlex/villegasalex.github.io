@@ -141,7 +141,7 @@ figcaption{
 /* Link Styling */
 
 a{
-	outline-style:none;
+	 text-decoration: none;
 }
 
 a:link,
@@ -152,7 +152,7 @@ a:visited {
 
 a:focus,
 a:hover {
-	
+	 text-decoration: none;
 }
 
 /* List Styling */
