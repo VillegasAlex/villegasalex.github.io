@@ -171,18 +171,39 @@ ol{
 	margin-right:0rem;
 	margin-left:0rem;
 }
-.long-list a:hover {}
-
-
+.long-list a:hover {
+	text-transform: uppercase;
+}
 
 /* Navigation Menu */
-nav {}
-nav a {}
+nav {
+	padding-left:0rem;
+	margin-top:0.25rem;
+}
+nav a {
+	text-decoration: none;
+	display:inline-block;
+	width:100%;
+	line-height:3;
+	text-align:center;
+	font-size:1.125rem;
+	margin-bottom:1.5rem;
+	border-style:solid;
+	border-width:0.063rem;
+	border-color:#33658A;
+	
+}
 
 nav a:focus,
-nav a:hover {}
+nav a:hover {
+	color:#FFF;
+	background-color:#33658A;
+}
 
-nav a:active {}
+nav a:active {
+	color:#FFF;
+	background-color:#000; 
+}
 
 
 /* Footer Styles */
