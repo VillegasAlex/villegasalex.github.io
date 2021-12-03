@@ -48,222 +48,274 @@
 
 /* ------ START WRITING YOUR CODE BELOW ------ */
 
+/* Font Import */
 
-/* General setup */
 
-* {
-    box-sizing: border-box;
+@font-face {
+    
+    font-family:Ultra;
+    src: url(../fonts/serif/ultra-regular.ttf);
+    font-weight: normal;
+    font-style: normal; 
 }
 
+@font-face {
+    
+    font-family:Roboto;
+    src: url(../fonts/sans-serif/roboto-regular.ttf);
+    font-weight: normal;
+    font-style: normal; 
+}
+
+
+
+/* General Setup */
+
 html {
+    
     font-size:16px;
+    font-family:Roboto, sans-serif;
+    color:#333;
 }
 
 body {
-    margin: 1.5rem auto;
-    width:90%;
-    min-width:56.25rem;
+   padding:0;
+    margin:0 auto;
+    font-size:1rem;
+    max-width:104rem;
+    min-width:64rem;
 }
-
-/* Layout */
 
 main {
-    overflow:auto;
-    min-width:45rem;
     
+    margin:0 auto;
+    padding-bottom:.25rem;
+    width:90%;
 }
 
-section {
-    float: left;
-    min-width: 22.5rem;
-    width:50%;
+ul {
+    list-style-type:none;
 }
 
-figure {
-    width:60%;
-    margin:0 10% 0 0;
-    float:left;
-}
-
-figure img {
+img {
     width:100%;
+    display:block;
     max-width:25rem;
 }
 
-figcaption {
-    margin:.375rem 0;
-}
-
-.long-list {
-    margin-top:0;
-}
-
-nav {
-    float: left;
-    width:11.25rem;
-}
-
-footer {
-    clear: both;
-    margin-top:1.5rem;
-}
-
-section, aside, nav, footer {
-  padding: .5rem;
-}
-
-/* header and footer */
-
-header, footer {
-  border-top: .125rem solid #33658A;
-  border-bottom: .125rem solid #33658A;
-}
-
-/* ------ START WRITING YOUR CODE BELOW THIS LINE ------ */
-
-/* NO changes should be made to any of the code above. */
-
-/* NOTE: While you will be using some of the same CSS properties, the VALUES 
-   may need to be different in order to style the page correctly. */
-
-
-
-/* Imported Typfaces */
-
-@font-face {
-  font-family: josefinslab-regular;
-	src: url(school-site/fonts/josefinslab-regular.ttf) format('truetype');
-	font-weight:normal;
-	font-style:normal;
-}
-@font-face {
-  font-family: montserrat-regular;
-	src: url(school-site/fonts/montserrat-regular.ttf) format('truetype');
-	font-weight:normal;
-	font-style:normal;
+a {
+    
+    text-decoration:none;
 }
 
 
-/* Typography Styles */
 
-html{ 
-	font-family: Monsterrat, "josefinslab-regular", Arial, sans-serif;
-	
+/* Header */
+
+header {
+    margin:0 auto;
+    padding:.5rem 5%;
+    text-align: center;
 }
 
 h1 {
-	font-family: josefinslab-regular, "Monsterrat", Arial, sans-serif;
-	font-size:3.75rem;
-	margin:1.125rem;
-	text-align:center;
-	letter-spacing:0.125rem;
-	
-}
-h2 {
-	font-family: josefinslab-regular, "Monsterrat", Arial, sans-serif;
-	font-size:1.5rem;
-	letter-spacing:0.125rem;
+    font-family:Roboto, serif;
+    font-size:3.75rem;
+    margin:2rem 0;
+    letter-spacing: .125rem;
+    text-shadow:.125rem .125rem .125rem #333;
+    transform:rotate(-4deg)
 }
 
-h2 + p {
-	
+.highlight {
+    font-family:Ultra;
+    font-weight:normal;
+    background-color:#83344D;
+    color:#EED;
+    padding:0 1rem;
+    font-size:4rem;
+    text-transform: uppercase;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    box-shadow:.187rem .187rem .187rem #333;
+}
+
+
+/* Navigation Menu */
+
+nav {
+    margin:4rem 0 4rem 0;
+    padding:0 5%;
+    border-top:.0625rem solid #333;
+    border-bottom:.0625rem solid #333;
+}
+
+nav a {
+    display:inline-block;
+    font-size:1.75rem;
+    padding:2rem 6rem 2rem 0;
+    color:#27476E;
+    font-weight:bold;
+}
+
+nav :nth-child(even):focus,
+nav :nth-child(even):hover,
+nav :nth-child(even):active {
+    text-decoration:line-through;
+    transform: rotate(4deg); 
+    text-transform: uppercase;
+    font-size:1.5rem;
+    color:#000;
+}
+
+nav :nth-child(odd):focus,
+nav :nth-child(odd):hover,
+nav :nth-child(odd):active {
+    text-decoration:line-through;
+    transform: rotate(-4deg); 
+    text-transform: uppercase;
+    font-size:1.5rem;
+    color:#000;
+}
+
+
+
+/* Section */
+
+.main-section {
+    display:flex;
+}
+
+article {
+    
+    width:75%;
+}
+
+.article-image {
+
+    float:left;
+    margin:0 1rem 0 0;
+}
+
+.article-image + p {
+    
+    margin-top:0;
+}
+
+/* Subsection */
+
+.subsection {
+    
+    margin-top:4rem;
+    margin-bottom:2rem;
+    padding:0;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(5rem, 1fr));
+    grid-column-gap: 1%;
+}
+
+.subsection figure {
+    padding:0;
+    margin:0;
+    background-color:#EED;
+}
+
+.subsection figcaption {
+    font-size:.75rem;
+    padding:.75rem;
+}
+
+.subsection img {
+    padding-bottom:1%;
+    min-width:5rem;
+}
+
+
+
+/* Typographic Styles */
+
+h2 {
+    font-size:1.5rem;
+}
+
+h3 {
+    font-size:1rem;
+}
+
+time {
+    font-style: italic;
+    font-size:.75rem;
+    margin-top:4%;
+    padding:.125rem;
 }
 
 p {
-	font-size:0.75rem;
-	letter-spacing:0.031rem;
-	word-spacing:0.125rem;
-}
-
-li{
-	font-size:0.75rem;
-	letter-spacing:0.031rem;
-	word-spacing:0.125rem;
-}
-
-figcaption{
-	font-size:0.75rem;
-	margin-bottom:2rem;
+    line-height:1.5;
 }
 
 
 
+/* Sidebar */
 
-/* Link Styling */
-
-a{
-	 text-decoration: none;
+aside {
+    clear:left;
+    margin-left:3%;
+    padding-left:3%;
+    width:19%;
+    border-left: .0625rem solid #333;
 }
 
-a:link,
-a:visited {
-	color:#33658A; 
-	
+aside :nth-child(1) {
+    
+    margin-top:0;
 }
 
-a:focus,
-a:hover {
-	 text-decoration: none;
+aside p {
+    font-size:.75rem;
+    padding-bottom:2rem;
+    border-bottom:.0625rem solid #333;
 }
 
-/* List Styling */
-
-ul{
-	list-style-type: square;
-	margin-top:1rem;
-	margin-bottom:1rem;
-	margin-right:0rem;
-	margin-left:0rem;
-}
-ol{
-	text-transform: lowercase;
-	margin-top:1rem;
-	margin-bottom:1rem;
-	margin-right:0rem;
-	margin-left:0rem;
-}
-.long-list a:hover {
-	text-transform: uppercase;
+.expand {
+    font-size:.25rem;
+    display:block;
+    padding-top:.5rem;
 }
 
-/* Navigation Menu */
-nav {
-	padding-left:0rem;
-	margin-top:0.25rem;
-}
-nav a {
-	text-decoration: none;
-	display:inline-block;
-	width:100%;
-	line-height:3;
-	text-align:center;
-	font-size:1.125rem;
-	margin-bottom:1.5rem;
-	border-style:solid;
-	border-width:0.063rem;
-	border-color:#33658A;
-	
+button {
+    margin-top:1rem;
+    padding:1rem;
+    font-family:Ultra;
+    font-size:1.5rem;
+    text-transform:uppercase;
+    background-color:#27476E;
+    box-shadow:.187rem .187rem .187rem #333;
+    border:none;
+    border-radius:.625rem;
+    background-color:#27476E;
 }
 
-nav a:focus,
-nav a:hover {
-	color:#FFF;
-	background-color:#33658A;
-}
-
-nav a:active {
-	color:#FFF;
-	background-color:#000; 
+button a {
+    color:#EED;
 }
 
 
-/* Footer Styles */
+
+/* Footer */
 
 footer {
-	text-align:center;
+    margin:6rem auto .5rem auto;
+    width:90%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1%;
 }
 
+footer :nth-child(2) {
+    text-align:right;
+}
 
-
-
-
+footer a {
+    font-family: ubuntu, serif;
+    color:#6F7D77;
+}
