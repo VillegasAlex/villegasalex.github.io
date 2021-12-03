@@ -48,8 +48,6 @@
 
 /* ------ START WRITING YOUR CODE BELOW ------ */
 
-/* Font Import */
-
 
 @font-face {
     
@@ -66,10 +64,6 @@
     font-weight: normal;
     font-style: normal; 
 }
-
-
-
-/* General Setup */
 
 html {
     
@@ -141,8 +135,6 @@ h1 {
 }
 
 
-/* Navigation Menu */
-
 nav {
     margin:4rem 0 4rem 0;
     padding:0 5%;
@@ -179,9 +171,6 @@ nav :nth-child(odd):active {
 }
 
 
-
-/* Section */
-
 .main-section {
     display:flex;
 }
@@ -202,7 +191,6 @@ article {
     margin-top:0;
 }
 
-/* Subsection */
 
 .subsection {
     
@@ -232,8 +220,6 @@ article {
 
 
 
-/* Typographic Styles */
-
 h2 {
     font-size:1.5rem;
 }
@@ -253,9 +239,6 @@ p {
     line-height:1.5;
 }
 
-
-
-/* Sidebar */
 
 aside {
     clear:left;
@@ -299,9 +282,6 @@ button a {
     color:#EED;
 }
 
-
-
-/* Footer */
 
 footer {
     margin:6rem auto .5rem auto;
