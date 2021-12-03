@@ -49,6 +49,57 @@
 /* ------ START WRITING YOUR CODE BELOW ------ */
 
 
+/* TO GET AN IDEA OF THE CSS YOU WILL LIKELY BE USING, SEE THE LISTS BELOW. */
+
+        /* 
+        
+        Spacing 
+
+            - padding (shorthand and/or specific properties like padding-bottom, etc.)
+
+            - margin, (shorthand and/or specific properties like margin-top, etc.)
+
+            - letter-spacing, word-spacing, line-height
+
+            - width, max-width, min-width
+            - height, max-height, min-height
+
+        Typography 
+
+            - font-family, font-size, font-style, font-weight
+
+            - text-decoration, text-align
+
+            - color
+
+            - text-shadow, text-transform
+
+        Box, Layout and Border 
+
+            - border (shorthand and/or specific properties like border-top, border-bottom-radius, border-width, etc.)
+
+            - box-shadow
+
+            - display, float, align-items, align-content
+
+            - grid-template-columns, grid-column-gap
+
+            - transform
+
+        Other
+
+            - :nth()-child (to target specific child elements)
+
+            - :focus, :hover, :active (to target link states)
+
+            - @font-face or @import (to import typefaces)
+
+        */
+
+
+/* ------ START WRITING YOUR CODE BELOW ------ */
+
+
 @font-face {
     
     font-family:Ultra;
@@ -125,13 +176,13 @@ h1 {
     font-family:Ultra;
     font-weight:normal;
     background-color:#83344D;
-    color:#EED;
+    color:#B8860B;
     padding:0 1rem;
     font-size:4rem;
     text-transform: uppercase;
     border-top-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
-    box-shadow:.187rem .187rem .187rem #333;
+    box-shadow:.180rem .180rem .180rem ;
 }
 
 
@@ -157,17 +208,17 @@ nav :nth-child(even):active {
     transform: rotate(4deg); 
     text-transform: uppercase;
     font-size:1.5rem;
-    color:#000;
+    color:#7FFF00;
 }
 
 nav :nth-child(odd):focus,
 nav :nth-child(odd):hover,
 nav :nth-child(odd):active {
     text-decoration:line-through;
-    transform: rotate(-4deg); 
+    transform: rotate(-10deg); 
     text-transform: uppercase;
     font-size:1.5rem;
-    color:#000;
+    color:#A52A2A;
 }
 
 
@@ -177,7 +228,7 @@ nav :nth-child(odd):active {
 
 article {
     
-    width:75%;
+    width:65%;
 }
 
 .article-image {
@@ -205,7 +256,7 @@ article {
 .subsection figure {
     padding:0;
     margin:0;
-    background-color:#EED;
+    background-color:#B8860B;
 }
 
 .subsection figcaption {
@@ -245,7 +296,7 @@ aside {
     margin-left:3%;
     padding-left:3%;
     width:19%;
-    border-left: .0625rem solid #333;
+    border-left: .0625rem solid #B8860B;
 }
 
 aside :nth-child(1) {
